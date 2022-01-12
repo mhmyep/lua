@@ -1,0 +1,108 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local GuiSerious = Instance.new("ScreenGui")
+local Keeper = Instance.new("Frame")
+local Main = Instance.new("Frame")
+local Toggle = Instance.new("TextButton")
+local ToggleBar = Instance.new("Frame")
+local SideBar = Instance.new("Frame")
+local buttin = Instance.new("TextButton")
+local Top = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Bottom = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local SideBar2 = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+
+--Properties:
+
+GuiSerious.Name = "GuiSerious"
+GuiSerious.Parent = game.CoreGui
+
+Keeper.Name = "Keeper"
+Keeper.Parent = GuiSerious
+Keeper.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Keeper.Position = UDim2.new(0.5, -50, 0.5, -50)
+Keeper.Size = UDim2.new(0, 100, 0, 100)
+Keeper.Active = true
+Keeper.Draggable = true
+
+Main.Name = "Main"
+Main.Parent = Keeper
+Main.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Main.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(-1.25916874, 0, -0.963567197, 0)
+Main.Size = UDim2.new(0, 445, 0, 292)
+
+Toggle.Name = "Toggle"
+Toggle.Parent = Main
+Toggle.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+Toggle.BackgroundTransparency = 0.200
+Toggle.BorderColor3 = Color3.fromRGB(106, 106, 106)
+Toggle.BorderSizePixel = 0
+Toggle.Position = UDim2.new(0.0470553041, 0, 0.0545141697, 0)
+Toggle.Size = UDim2.new(0, 95, 0, 20)
+Toggle.Font = Enum.Font.SourceSansSemibold
+Toggle.TextColor3 = Color3.fromRGB(255, 255, 255)
+Toggle.TextScaled = true
+Toggle.TextSize = 1.000
+Toggle.TextWrapped = true
+
+ToggleBar.Name = "ToggleBar"
+ToggleBar.Parent = Toggle
+ToggleBar.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+ToggleBar.Position = UDim2.new(-0.00169356493, 0, -0.312329113, 0)
+ToggleBar.Size = UDim2.new(0, 95, 0, 6)
+
+SideBar.Name = "SideBar"
+SideBar.Parent = Keeper
+SideBar.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+SideBar.BorderSizePixel = 0
+SideBar.Position = UDim2.new(-2.25916886, 0, -1.02175438, 0)
+SideBar.Size = UDim2.new(0, 100, 0, 305)
+
+buttin.Name = "buttin"
+buttin.Parent = SideBar
+buttin.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+buttin.BackgroundTransparency = 0.200
+buttin.BorderColor3 = Color3.fromRGB(106, 106, 106)
+buttin.BorderSizePixel = 0
+buttin.Position = UDim2.new(0.067055054, 0, 0.0479569435, 0)
+buttin.Size = UDim2.new(0, 86, 0, 26)
+buttin.Font = Enum.Font.SourceSansSemibold
+buttin.Text = "button"
+buttin.TextColor3 = Color3.fromRGB(255, 255, 255)
+buttin.TextScaled = true
+buttin.TextSize = 1.000
+buttin.TextWrapped = true
+
+Top.Name = "Top"
+Top.Parent = Keeper
+Top.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Top.BorderSizePixel = 0
+Top.Position = UDim2.new(-2.25916886, 0, -1.11111116, 0)
+Top.Size = UDim2.new(0, 550, 0, 15)
+
+UICorner.Parent = Top
+
+Bottom.Name = "Bottom"
+Bottom.Parent = Keeper
+Bottom.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Bottom.BorderSizePixel = 0
+Bottom.Position = UDim2.new(-2.25916886, 0, 1.95678329, 0)
+Bottom.Size = UDim2.new(0, 546, 0, 15)
+
+UICorner_2.Parent = Bottom
+
+SideBar2.Name = "SideBar2"
+SideBar2.Parent = Keeper
+SideBar2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+SideBar2.BorderSizePixel = 0
+SideBar2.Position = UDim2.new(3.09541583, 0, -1.10111117, 0)
+SideBar2.Size = UDim2.new(0, 15, 0, 321)
+
+UICorner_3.Parent = SideBar2
